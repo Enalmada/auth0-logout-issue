@@ -5,7 +5,7 @@ I have copied the [Next.js Auth0 example](https://github.com/zeit/next.js/tree/c
 After deploying, everything works but logout.  
 
 Steps to reproduce
-* fork repository
+* [fork reproduction repository](https://github.com/Enalmada/auth0-logout-issue)
 * npm install
 * Add AWS key/secret to .env file following .env.template
 * Add auth0 client/domain/secrets to .env-cmdrc file
@@ -13,6 +13,7 @@ Steps to reproduce
 * deploy to aws using `npm run deployStaging` 
 * put the generated Cloudfront domain into .env-cmdrc REDIRECT_URI and POST_LOGOUT_REDIRECT_URI
 * re-deploy to aws using `npm run deployStaging` so deployed version has correct redirect URI
+* put generated cloudfront domain into Auth0 settings (Allowed Callback URLs, etc)
 * attempt logout.  
     Expected result - cookies are cleared
     Actual result - cookies remain and user is not logged out
