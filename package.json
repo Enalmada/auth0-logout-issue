@@ -1,0 +1,25 @@
+{
+  "name": "nextjs-auth0-example",
+  "scripts": {
+    "dev": "env-cmd -e local next",
+    "build": "next build",
+    "start": "next start",
+    "deployStaging": "env-cmd -e staging serverless"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@auth0/nextjs-auth0": "0.5.0",
+    "dotenv": "^8.2.0",
+    "env-cmd": "^10.0.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "latest",
+    "nookies": "^2.0.8",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "serverless": "^1.56.1",
+    "serverless-next.js": "^1.4.3"
+  }
+}
